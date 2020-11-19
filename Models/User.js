@@ -23,7 +23,18 @@ const UserSchema = new mongoose.Schema({
         default: 'ROLE_ADMIN'
       },
     profile:{
-        type: String,
+        information:{
+            lives:{type:String},
+            tel:{type:String},
+            email:{type:String},
+            website:{type:String}
+        },
+        about:{
+            gender:{type:String},
+            dateofbirth:{type:String},
+            religious:{type:String},
+            aboutyour:{type:String},
+        }
     }
     },
     { timestamps: true }
