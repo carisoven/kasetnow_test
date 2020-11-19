@@ -6,18 +6,6 @@ const mongoose = require("mongoose");
 const Message = require('../../Models/Message');
 
 
-// Get message from user conversation
-// GET /api/messages/
-// router.get("/",(req,res)=>{
-
-// });
-
-// Get message from user conversation
-// POST /api/messages/
-// router.post("/",(req,res)=>{
-    
-// })
-
 // Get conversations list
 router.get('/conversations',[auth], (req, res) => {
     let from = mongoose.Types.ObjectId(req.user.id);
